@@ -3,18 +3,17 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 body {
   background-color: rgb(240, 240, 240);
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .container {
@@ -25,7 +24,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: scale(1.5);
   filter: blur(4px);
 }
 
@@ -34,7 +32,7 @@ body {
   z-index: 2;
   position: absolute;
   width: 300px;
-  height: 80vh;
+  height: 75vh;
   left: 50%;
   top: 50vh;
   transform: translate(-50%, -50%);
@@ -59,21 +57,83 @@ body {
 }
 
 .player .title {
-    margin-top: 10px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .player .author {
-    text-align: center;
-    font-size: 22px;
-    color: rgb(59, 59, 59);
+  text-align: center;
+  font-size: 22px;
+  color: rgb(59, 59, 59);
 }
 
-@media only screen and (min-width:600px) {
-    .music__player {
-        width: 420px;
-    }
+.time__controls {
+  margin-top: 25px;
+  width: 90%;
+  margin: 25px auto;
 }
 
+.time__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress__container {
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: rgb(117, 117, 117);
+  cursor: pointer;
+}
+
+.progress {
+  border-radius: 5px;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.music__controls {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev,
+.next {
+  width: 40px;
+  height: 40px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url("./assets/previous.svg");
+}
+
+.play {
+    background-image: url("./assets/play.svg");
+}
+
+.pause {
+    background-image: url("./assets/pause.svg")
+}
+
+.music {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.next {
+  background-image: url("./assets/next.svg");
+}
+
+@media only screen and (min-width: 600px) {
+  .music__player {
+    width: 420px;
+  }
+}
