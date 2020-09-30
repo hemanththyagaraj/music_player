@@ -90,8 +90,8 @@ body {
 
 .progress {
   border-radius: 5px;
-  width: 60%;
-  height: 100%;
+  width: 0%;
+  height: 5px;
   background-color: rgb(0, 0, 0);
 }
 
